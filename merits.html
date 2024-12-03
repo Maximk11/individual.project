@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="src/pon.ico" type="image/x-icon">
+    <title>Мои заслуги</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Мои заслуги</h1>
+        <p>Заслуги, которыми я горжусь</p>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">Обо мне</a></li>
+        <li><a href="merits.html">Мои заслуги</a></li>
+        <li><a href="projects.html">Мои проекты</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container">
+        <h2>Мои достижения</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="src/грамота 1.jpg" alt="Грамота 1" class="project-photo" onclick="openModal(this)" />
+          </div>
+          <div class="project-item">
+            <img src="src/грамота 2.jpg" alt="Грамота 2" class="project-photo" onclick="openModal(this)" />
+          </div>
+          <div class="project-item">
+            <img src="src/грамота 3.jpg" alt="Грамота 3" class="project-photo" onclick="openModal(this)" />
+          </div>
+          <div class="project-item">
+            <img src="src/грамота 4.jpg" alt="Грамота 4" class="project-photo" onclick="openModal(this)" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; Волгоград, 2024</p>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
